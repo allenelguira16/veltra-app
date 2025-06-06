@@ -1,16 +1,15 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "emitDeclarationOnly": false,
+    "module": "esnext",
     "target": "ES2020",
-    "module": "ESNext",
-    "importHelpers": true,
     "moduleResolution": "node",
-    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "importHelpers": true,
     "declaration": true,
     "outDir": "dist/types"
-
-    // "jsx": "preserve",
-    // "jsxImportSource": "./src"
   },
   "include": ["./src"]
 }
